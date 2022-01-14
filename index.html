@@ -1,0 +1,153 @@
+<!--TODO:modif adapter selon jeu
+         envoie de diff sur page de jeu
+         Ajout d'un parcours
+         Faire un CSS propre
+         faire un profil user gardant le score-->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Serious Game GR6</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+        <img width="130" height="100" src="logo.PNG" alt="Paris" class="center">
+        <a href="explicationSG.html">
+            <img align="right" id="explication" src="interrogation.png"  alt="explication Serious Game"  />
+        </a>
+    </head>
+
+    <body background="background.jpg">
+    <div id="theme">
+        <h1> Menu</h1>
+        <center><a>Choisissez un thème</a></center>
+        <br>
+        </br>
+        <center>
+            <button >
+            <a  href=# id="CALCUL"  onClick="save_CALCUL()"><span >CALCUL</span></a> </button>
+
+        </center>
+
+        <center>
+            <button >
+            <a href=# id="LECTURE"  onClick="save_LECTURE()"><span >LECTURE</span></a>
+            </button>
+        </center>
+
+        <center>
+            <button >
+            <a href=# id="ECRITURE"  onClick="save_ECRITURE()"><span >ECRITURE</span></a>
+            </button>
+        </center>
+
+        <center>
+            <button >
+            <a href=# id="LECTURE_IMAGE"  onClick="save_LECT_IMG()"><span >LECTURE IMAGE</span></a>
+            </button>
+        </center>
+
+    </div>
+    <div id="difficulte">
+        <h1> Menu</h1>
+        <center><a>Choisissez une difficulte</a></center>
+        <br>
+        </br>
+        <center>
+            <button >
+                <a  href=# id="Facile"  onClick="save_Facile()"><span >FACILE</span></a> </button>
+
+        </center>
+
+        <center>
+            <button >
+                <a href=# id="Normal"  onClick="save_Normal()"><span >NORMAL</span></a>
+            </button>
+        </center>
+
+        <center>
+            <button >
+                <a href=# id="Difficile"  onClick="save_Difficile()"><span >DIFFICILE</span></a>
+            </button>
+        </center>
+        <center>
+            <button id="btnRetour">
+                <a href=# id="retour"  onClick="retour()"><span >RETOUR</span></a>
+            </button>
+        </center>
+
+    </div>
+
+
+        <script>
+            var donne;
+            var diff;
+
+            function retour() {
+                document.getElementById('theme').style.display = 'block';
+                document.getElementById('difficulte').style.display = 'none';
+            }
+            function save_CALCUL() {
+                donne = document.getElementById('CALCUL').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
+                console.log(donne);
+            }
+            function save_LECTURE() {
+                donne = document.getElementById('LECTURE').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
+                console.log(donne);
+            }
+            function save_ECRITURE() {
+                donne = document.getElementById('ECRITURE').innerText;
+                document.getElementById('theme').style.display = 'none';
+                document.getElementById('difficulte').style.display = 'block';
+                console.log(donne);
+            }
+            function save_LECT_IMG(){
+                donne = document.getElementById('LECTURE_IMAGE').innerText;
+                console.log(donne);
+                location.href = "lectureImage.html";
+            }
+            function save_Facile() {
+                diff = document.getElementById('Facile').innerText;
+                if( donne == "CALCUL"){
+                    location.href = "calcul.html";
+                }
+                if( donne == "LECTURE"){
+                    location.href = "lectureFacile.html";
+                }
+                if( donne == "ECRITURE"){
+                    location.href = "ecriture.html";
+                }
+                console.log(diff);
+            }
+            function save_Normal() {
+                diff = document.getElementById('Normal').innerText;
+                if( donne == "CALCUL"){
+                    location.href = "calcul.html";
+                }
+                if( donne == "LECTURE"){
+                    location.href = "lectureMoyen.html";
+                }
+                if( donne == "ECRITURE"){
+                    location.href = "ecritureNormale.html";
+                }
+                console.log(diff);
+
+            } function save_Difficile() {
+                diff = document.getElementById('Difficile').innerText;
+                console.log(diff);
+                if( donne == "CALCUL"){
+                    location.href = "calcul.html";
+                }
+                if( donne == "LECTURE"){
+                    location.href = "lectureMoyen.html";
+                }
+                if( donne == "ECRITURE"){
+                    location.href = "ecritureDifficile.html";
+                }
+            }
+        </script>
+    </body>
+</html>
+
