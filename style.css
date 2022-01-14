@@ -1,0 +1,172 @@
+h1{
+    padding-top: 1%;
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+
+}
+
+.texte{
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 18px;
+    border: solid;
+    background-color: white;
+
+    text-align: center;
+}
+
+.contener{
+    border:1px dotted black;  
+    text-align: center; 
+}
+
+.reponse{
+    margin-bottom: 1%;
+}
+
+.image{
+    margin-top: 1%;
+}
+
+.question{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+span{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#theme{
+    display:block;
+}
+#difficulte{
+    display:none;
+}
+/*.valider {
+    width: 50px;
+    height: 30px;
+    background: #B9DFFF;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+}
+.valider:hover {
+background: #016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow:none;
+}*/
+
+button {
+    display: inline-block;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 260px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+ }
+button:hover {
+    background-color: #2bc505;
+}
+button:hover span {
+    padding-right: 25px;
+}
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#texte{
+    text-align: justify;
+}
+#explication{
+    width: 55px;
+    height: 85px;
+}
+
+#sg{
+    position: relative;
+    left: 300px;
+    text-align: center;
+    width: 800px;
+}
+#liste{
+    position: relative;
+    left: 500px;
+    width: 300px;
+}
+
+#btnRetour {
+    display: inline-block;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 260px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#btnRetour span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#btnRetour span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+#btnRetour:hover {
+    background-color: #46B7E4;
+}
+#btnRetour:hover span {
+    padding-right: 25px;
+}
+#btnRetour:hover span:after {
+    opacity: 1;
+    right: 0;
+}

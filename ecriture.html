@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Serious Game GR6</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="ecritureFacile.js"></script>
+        <script type="text/javascript" src="function.js"></script>
+        <a href="index.html">
+            <img width="130" height="100" src="logo.PNG" alt="Paris" class="center">
+        </a>
+        <h1>Ecriture</h1>
+    </head>
+
+    <body background="background.jpg">
+        <div class="contener">
+            <div class="question" id="question">
+                <script>printQuestion("Facile")</script>
+            </div>
+
+            <div class="possibilite" id="possibilite">
+                <script>printaideEcriture("Facile")</script>
+                <input type="submit" id="b1" value="social" onclick="updateEcriture('Facile',value)">
+                <input type="submit" id="b2" value="sociaux" onclick="updateEcriture('Facile',value)">
+                <input type="submit" id="b3" value="sociable" onclick="updateEcriture('Facile',value)">
+                <input type="submit" id="b4" value="socialisable" onclick="updateEcriture('Facile',value)">
+
+            </div>
+            <br>
+
+
+
+            <div class="valider">
+                <input type="submit" id="validerInput" value="Valider la reponse" onclick="updateEcriture('Facile')">
+            </div>
+
+
+            <div id="printRes"></div>
+
+
+            <div id="compteur">
+                <h2>Nombre de bonne réponse:
+                    <!--               <cpt> correspond a l'affichage de valeur du compteur-->
+                    <span id="cpt"></span>
+                    <!--               <res> correspond a l'affichage de la réponse si elle était fausse-->
+                    <span id="res"></span>
+                    <!--                Actualisation de l'affichage du score-->
+                    <script type="text/javascript">printScore()</script>
+                    </h2>
+            </div>
+        </div>
+    </body>
+</html>
+

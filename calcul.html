@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Serious Game GR6</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="calculFacile.js"></script>
+        <script type="text/javascript" src="function.js"></script>
+        <a href="index.html">
+            <img width="130" height="100" src="logo.PNG" alt="Paris" class="center">
+        </a>
+        <h1>Calcul</h1>
+    </head>
+
+    <body background="background.jpg">
+        <div class="contener">
+
+            <div class="question" id="question">
+                <script>printQuestion("Facile")</script>
+            </div>
+
+            <div class="reponse">
+                <label for="reponseInput"></label>
+                <input type="text" id="reponseInput" name="name" onkeypress="return onlyNumberKey(event)">
+            </div>
+
+
+            <div class="valider">
+                <input type="submit" id="validerInput" value="Valider la reponse" onclick="update('Facile')">
+            </div>
+
+
+            <div id="printRes"></div>
+
+
+            <div id="compteur">
+                <h2>Nombre de bonne réponse:
+                    <!--               <cpt> correspond a l'affichage de valeur du compteur-->
+                    <span id="cpt"></span>
+                    <!--               <res> correspond a l'affichage de la réponse si elle était fausse-->
+                    <span id="res"></span>
+                    <!--                Actualisation de l'affichage du score-->
+                    <script type="text/javascript">printScore()</script>
+                </h2>
+            </div>
+        </div>
+    </body>
+</html>
+

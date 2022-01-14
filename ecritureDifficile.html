@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Serious Game GR6</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="ecritureFacile.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+    <a href="index.html">
+        <img width="130" height="100" src="logo.PNG" alt="Paris" class="center">
+    </a>
+    <h1>Ecriture</h1>
+</head>
+
+<body>
+<div class="contener">
+    <div class="question" id="question">
+        <script>printQuestion("Difficile")</script>
+    </div>
+
+    <div class="possibilite" id="possibilite">
+        <script>printaideEcriture("Difficile")</script>
+    </div>
+    <br>
+    <div class="reponse">
+        <label for="reponseInput"></label>
+        <input type="text" id="reponseInput" name="name">
+    </div>
+
+
+    <div class="valider">
+        <input type="submit" id="validerInput" value="Valider la reponse" onclick="updateEcriture('Difficile')">
+    </div>
+
+
+    <div id="printRes"></div>
+
+
+    <div id="compteur">
+        <p>Nombre de bonne réponse:
+            <!--               <cpt> correspond a l'affichage de valeur du compteur-->
+            <span id="cpt"></span>
+            <!--               <res> correspond a l'affichage de la réponse si elle était fausse-->
+            <span id="res"></span>
+            <!--                Actualisation de l'affichage du score-->
+            <script type="text/javascript">printScore()</script>
+        </p>
+    </div>
+</div>
+</body>
+</html>
+
