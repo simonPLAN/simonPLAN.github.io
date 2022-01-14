@@ -158,7 +158,7 @@ function update(mode){
 function updateEcriture(mode,value){
 
     // document.write(document.getElementById("b1").valueOf());
-    stopGame(10);
+    stopGame(6);
     printResponse(mode);
     printaideEcriture(mode);
     majbouton(mode);
